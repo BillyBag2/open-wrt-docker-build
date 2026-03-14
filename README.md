@@ -13,5 +13,5 @@ Secrets include...
 
 ## References
 
-* OpenWRT [GitHub](https://github.com/openwrt/openwrt.git)
+* OpenWRT [GitHub](https://github.com/openwrt/openwrt)
 * OpenWRT [Developer guide](https://openwrt.org/docs/guide-developer/start)
