@@ -1,0 +1,4 @@
+
+ARG D_FROM_IMAGE=ubuntu:24.04
+FROM ${D_FROM_IMAGE}
+
