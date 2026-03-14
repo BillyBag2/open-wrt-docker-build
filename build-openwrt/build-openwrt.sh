@@ -9,7 +9,6 @@ cd -
 
 OWDB_PLATFORM_DIR=$1
 OWDB_PLATFORM_DIR_DEFAULT=coremp135
-OWDB_SRC_DIR=$(pwd)/../submodules/openwrt
 OWDB_SANDBOX_DIR=/sandbox
 
 if [ -z "$OWDB_PLATFORM_DIR" ]; then
@@ -31,5 +30,6 @@ docker run \
     --rm \
     -it \
     -v $(pwd)/$OWDB_PLATFORM_DIR/build:$OWDB_SANDBOX_DIR/build \
+    -v ${OWDB_SRC_DIR}:$OWDB_SANDBOX_DIR \
     $OWDB_IMAGE \
     /bin/bash
