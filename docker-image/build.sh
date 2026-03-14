@@ -2,7 +2,9 @@
 
 set -e
 
-source ../conf.env
+cd ..
+source ./conf.env
+cd -
 
 cd dockerfile
 

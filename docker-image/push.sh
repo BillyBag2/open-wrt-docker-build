@@ -2,6 +2,8 @@
 
 set -e
 
-source ../conf.env
+cd ..
+source ./conf.env
+cd -
 
 docker push ${OWDB_IMAGE}
